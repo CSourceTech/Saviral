@@ -66,7 +66,7 @@ const Navbar = () => {
           ${menuOpen ? 'absolute top-full left-0 right-0 bg-white  shadow-md p-4' : 'hidden'}
           md:static md:bg-transparent md:shadow-none md:p-0
         `}>
-          {['HOME', 'ABOUT', 'SHOP', 'CONTACT'].map((item) => (
+          {['HOME', 'ABOUT', 'SHOP', 'CONTACT','TRACK ORDER'].map((item) => (
             <li key={item} className="py-2 md:py-0">
               <Link
                 to={item === 'HOME' ? '/' : `/${item.toLowerCase().replace(' ', '-')}`}
